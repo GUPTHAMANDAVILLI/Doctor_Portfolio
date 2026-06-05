@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. John Doe — Board-Certified Cardiologist</title>
+  <meta name="description" content="Dr. John Doe is a board-certified cardiologist with over 15 years of experience in cardiovascular medicine, preventive cardiology, and interventional procedures." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-icon">&#9769;</span> Dr. John Doe
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero" class="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-text">
+        <p class="hero-subtitle">Board-Certified Cardiologist</p>
+        <h1 class="hero-title">
+          Compassionate Care,<br />
+          <span class="gradient-text">Expert Heart Health</span>
+        </h1>
+        <p class="hero-description">
+          With over 15 years of experience, I'm dedicated to providing
+          personalized cardiovascular care using the latest advances in
+          heart medicine.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary" id="heroBookBtn">Book Appointment</a>
+          <a href="#about" class="btn btn-outline" id="heroLearnBtn">Learn More</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number" data-target="15">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-target="10000">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">Patients Treated</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-target="98">0</span><span class="stat-suffix">%</span>
+            <span class="stat-label">Patient Satisfaction</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-wrapper">
+          <img src="assets/doctor.png" alt="Dr. John Doe" />
+          <div class="image-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Dedicated to Your <span class="gradient-text">Heart Health</span></h2>
+      </div>
+      <div class="about-content">
+        <div class="about-card glass-card">
+          <div class="about-icon">&#127891;</div>
+          <h3>Education</h3>
+          <p>MD from Johns Hopkins School of Medicine. Fellowship in Cardiovascular Medicine at Mayo Clinic.</p>
+        </div>
+        <div class="about-card glass-card">
+          <div class="about-icon">&#129657;</div>
+          <h3>Philosophy</h3>
+          <p>I believe in treating the whole person, not just the symptoms. Every patient deserves a personalized, evidence-based care plan.</p>
+        </div>
+        <div class="about-card glass-card">
+          <div class="about-icon">&#127942;</div>
+          <h3>Certifications</h3>
+          <p>American Board of Internal Medicine — Cardiovascular Disease. Fellow of the American College of Cardiology (FACC).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section id="services" class="services section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Services</span>
+        <h2 class="section-title">Comprehensive <span class="gradient-text">Cardiac Care</span></h2>
+        <p class="section-desc">From preventive screenings to advanced interventions, I offer a full spectrum of cardiovascular services.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card glass-card" id="servicePreventive">
+          <div class="service-icon">&#129657;</div>
+          <h3>Preventive Cardiology</h3>
+          <p>Risk assessment, cholesterol management, and lifestyle counseling to keep your heart healthy for life.</p>
+        </div>
+        <div class="service-card glass-card" id="serviceEcho">
+          <div class="service-icon">&#128147;</div>
+          <h3>Echocardiography</h3>
+          <p>Non-invasive ultrasound imaging to evaluate heart structure, function, and blood flow in real-time.</p>
+        </div>
+        <div class="service-card glass-card" id="serviceStress">
+          <div class="service-icon">&#127939;</div>
+          <h3>Stress Testing</h3>
+          <p>Exercise and pharmacologic stress tests to assess how your heart performs under physical exertion.</p>
+        </div>
+        <div class="service-card glass-card" id="serviceInterventional">
+          <div class="service-icon">&#129656;</div>
+          <h3>Interventional Procedures</h3>
+          <p>Cardiac catheterization, angioplasty, and stent placement with cutting-edge minimally invasive techniques.</p>
+        </div>
+        <div class="service-card glass-card" id="serviceArrhythmia">
+          <div class="service-icon">&#9889;</div>
+          <h3>Arrhythmia Management</h3>
+          <p>Diagnosis and treatment of irregular heart rhythms, including Holter monitoring and ablation procedures.</p>
+        </div>
+        <div class="service-card glass-card" id="serviceHeart">
+          <div class="service-icon">&#128154;</div>
+          <h3>Heart Failure Care</h3>
+          <p>Comprehensive management of heart failure with advanced therapies and coordinated multidisciplinary care.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE TIMELINE ===================== -->
+  <section id="experience" class="experience section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Experience</span>
+        <h2 class="section-title">Professional <span class="gradient-text">Journey</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item" id="exp1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-year">2010 — Present</span>
+            <h3>Director of Cardiology</h3>
+            <p class="timeline-place">St. Mary's Medical Center, New York</p>
+            <p>Leading a team of 12 cardiologists and overseeing all cardiovascular services, research, and patient outcomes.</p>
+          </div>
+        </div>
+        <div class="timeline-item" id="exp2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-year">2006 — 2010</span>
+            <h3>Interventional Cardiologist</h3>
+            <p class="timeline-place">Cleveland Clinic, Ohio</p>
+            <p>Performed over 2,000 catheterizations and coronary interventions with a 99.4% procedural success rate.</p>
+          </div>
+        </div>
+        <div class="timeline-item" id="exp3">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-year">2003 — 2006</span>
+            <h3>Cardiology Fellowship</h3>
+            <p class="timeline-place">Mayo Clinic, Rochester, MN</p>
+            <p>Advanced training in cardiovascular imaging, heart failure management, and clinical research.</p>
+          </div>
+        </div>
+        <div class="timeline-item" id="exp4">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-year">1999 — 2003</span>
+            <h3>Internal Medicine Residency</h3>
+            <p class="timeline-place">Johns Hopkins Hospital, Baltimore, MD</p>
+            <p>Chief Resident in the final year. Published 8 peer-reviewed papers on cardiovascular risk stratification.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section id="testimonials" class="testimonials section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="section-title">What Patients <span class="gradient-text">Say</span></h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card glass-card" id="testimonial1">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">"Dr. Doe literally saved my life. After my heart attack, his team was incredible — calm, knowledgeable, and deeply caring. I'm forever grateful."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MR</div>
+            <div>
+              <strong>Michael R.</strong>
+              <span>Patient since 2018</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card glass-card" id="testimonial2">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">"He takes the time to explain everything in simple terms. I never feel rushed during appointments and always leave feeling informed and reassured."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SL</div>
+            <div>
+              <strong>Sarah L.</strong>
+              <span>Patient since 2020</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card glass-card" id="testimonial3">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">"Best cardiologist I've ever had. His preventive approach helped me manage my cholesterol and avoid the surgery I was told I'd need."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">DK</div>
+            <div>
+              <strong>David K.</strong>
+              <span>Patient since 2015</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Book an <span class="gradient-text">Appointment</span></h2>
+        <p class="section-desc">Ready to take control of your heart health? Reach out to schedule a consultation.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="info-card glass-card" id="contactPhone">
+            <div class="info-icon">&#128222;</div>
+            <h3>Phone</h3>
+            <p>(555) 123-4567</p>
+          </div>
+          <div class="info-card glass-card" id="contactEmail">
+            <div class="info-icon">&#9993;</div>
+            <h3>Email</h3>
+            <p>dr.johndoe@heartcare.com</p>
+          </div>
+          <div class="info-card glass-card" id="contactLocation">
+            <div class="info-icon">&#128205;</div>
+            <h3>Location</h3>
+            <p>1234 Medical Plaza, Suite 500<br />New York, NY 10001</p>
+          </div>
+          <div class="info-card glass-card" id="contactHours">
+            <div class="info-icon">&#128336;</div>
+            <h3>Office Hours</h3>
+            <p>Mon — Fri: 8:00 AM — 5:00 PM<br />Sat: 9:00 AM — 1:00 PM</p>
+          </div>
+        </div>
+        <form class="contact-form glass-card" id="contactForm">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Describe your health concerns or preferred appointment time…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            Send Message <span class="btn-arrow">&rarr;</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="logo-icon">&#9769;</span> Dr. John Doe
+        <p>Board-Certified Cardiologist dedicated to advancing heart health through compassionate, evidence-based care.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#experience">Experience</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Dr. John Doe. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
